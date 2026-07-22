@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pesquisar um filme</title>
+    <link rel="stylesheet" href="../static/css/estilo.css">
+</head>
+<body>
+
+    <div class="caixa">
+        <h1>Pesquisar Filmes</h1>
+
+        <form action="/usuario/pesquisar" method="GET">
+            <input type="text" name="nome_filme" placeholder="Digite o nome do filme">
+            <button type="submit">Buscar</button>
+        </form>
+
+        <br>
+
+        {% for filme in filmes %}
+            <div class="item-filme">
+                <a href="/usuario/detalharfilme?nome={{filme[0]}}&resumo={{filme[3]}}" target="_blank">
+                    <h3>{{ filme[0] }}</h3>
+                </a>
+
+                <p>Gênero: {{ filme[1] }} | Ano: {{ filme[2] }}</p>
+            </div>
+            <hr>
+        {% endfor %}
+
+        <br>
+        <a href="/usuario/principal">Voltar</a>
+    </div>
+
+</body>
+</html>

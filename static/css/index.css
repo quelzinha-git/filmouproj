@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background-color: #0a0a0a;
+    color: white;
+    min-height: 100vh;
+}
+
+.topo{
+    width: 100%;
+    background: linear-gradient(180deg, #000000, #111111);
+    text-align: center;
+    padding: 45px 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.topo h1{
+    font-size: 55px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+.topo h2{
+    font-size: 22px;
+    font-weight: 300;
+    color: #d1d1d1;
+}
+
+.conteudo{
+    padding: 30px;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.botao{
+    transition: 0.3s;
+}
+
+.botao a{
+    display: block;
+    width: 160px;
+    padding: 14px;
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border-radius: 12px;
+    font-size: 17px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(255,255,255,0.08);
+}
+
+.botao a:hover{
+    transform: translateY(-4px);
+    background-color: #d9d9d9;
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+.msg{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.msg h2{
+    font-size: 32px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.imagens{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.foto{
+    overflow: hidden;
+    border-radius: 18px;
+    transition: 0.4s;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.foto img{
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.foto:hover{
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 0 25px rgba(255,255,255,0.15);
+}
+
+.foto:hover img{
+    transform: scale(1.08);
+}

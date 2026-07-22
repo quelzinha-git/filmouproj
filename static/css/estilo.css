@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #000000, #111111, #1c1c1c);
+    padding: 40px;
+    color: white;
+}
+
+
+.caixa{
+    width: 750px;
+    padding: 40px
+    border-radius: 25px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(255,255,255,0.15);
+}
+
+form{
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+input{
+    flex: 1;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background-color: rgba(255,255,255,0.08);
+    color: white;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus{
+    background-color: rgba(255,255,255,0.12);
+    box-shadow: 0 0 10px rgba(255,255,255,0.12);
+}
+
+input::placeholder{
+    color: #bdbdbd;
+}
+
+button{
+    padding: 14px 24px;
+    border: none;
+    border-radius: 12px;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    transform: translateY(-3px);
+    background-color: #dddddd;
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+.item-filme{
+    padding: 18px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.04);
+    transition: 0.3s;
+    margin-bottom: 15px;
+}
+
+.item-filme:hover{
+    transform: translateY(-3px);
+    background: rgba(255,255,255,0.08);
+    box-shadow: 0 0 15px rgba(255,255,255,0.08);
+}
+
+.item-filme h3{
+    margin-bottom: 8px;
+    font-size: 24px;
+    color: white;
+}
+
+.item-filme p{
+    color: #cfcfcf;
+    font-size: 15px;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-color: rgba(255,255,255,0.08);
+    margin-bottom: 15px;
+}
+
+a{
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+a:hover{
+    color: #cfcfcf;
+    transform: translateX(-3px);
+}

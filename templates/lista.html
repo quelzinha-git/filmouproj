@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Usuários cadastrados</title>
+    <link rel="stylesheet" href="../static/css/listar.css">
+</head>
+<body>
+
+        <h1>Usuários cadastrados</h1>
+<hr>
+
+<div class="lista">
+
+    {% if usuarios %}
+
+        {% for usuario in usuarios %}
+            <div class="usuario">
+                <p>{{ usuario.nome }} | {{ usuario.email }}</p>
+            </div>
+        {% endfor %}
+
+    {% else %}
+
+        <p class="sem-usuarios">Nenhum usuário cadastrado.</p>
+
+    {% endif %}
+
+</div>

@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #000000, #111111, #1c1c1c);
+    color: white;
+    overflow: hidden;
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: rgba(255,255,255,0.03);
+    border-radius: 50%;
+    top: -150px;
+    right: -150px;
+    filter: blur(20px);
+}
+
+body::after{
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: rgba(255,255,255,0.02);
+    border-radius: 50%;
+    bottom: -120px;
+    left: -120px;
+    filter: blur(20px);
+}
+
+.topo{
+    position: absolute;
+    top: 80px;
+    text-align: center;
+}
+
+.topo h1{
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px rgba(255,255,255,0.2);
+}
+
+.botoes{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    z-index: 1;
+}
+
+.botao a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    padding: 16px;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.08);
+    font-size: 18px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.botao a:hover{
+    transform: translateY(-4px) scale(1.02);
+    background: white;
+    color: black;
+    box-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
+
+.botao:last-child a{
+    background: rgba(255, 60, 60, 0.12);
+    border: 1px solid rgba(255, 60, 60, 0.2);
+}
+
+.botao:last-child a:hover{
+    background: #ff3b3b;
+    color: white;
+    box-shadow: 0 0 20px rgba(255, 59, 59, 0.5);
+}

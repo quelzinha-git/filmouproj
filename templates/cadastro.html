@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../static/css/cadastro.css">
+</head>
+<body>
+
+<div class="inicio">
+    <h1>🎬 Filmou</h1>
+</div>
+
+<div class="formulario">
+
+    <p>Realizar cadastro</p>
+    <br>
+
+    <form action="/usuario/cadastro" method="post">
+
+        <label>Nome do usuário:</label><br>
+        <input type="text" name="nome"><br><br>
+
+        <label>Email:</label><br>
+        <input type="text" name="emailusuario"><br><br>
+
+        <label>Senha:</label><br>
+        <input type="password" name="senhausuario"><br><br>
+
+        <label>Confirmar senha:</label><br>
+        <input type="password" name="senha2"><br><br>
+
+        <button type="submit">Cadastrar</button>
+        <br><br>
+
+        <a class="paglogin" href="/usuario/login">
+            Já possui uma conta? Entrar
+        </a>
+
+    </form>
+
+    <h3>{{msg}}</h3>
+
+</div>
+
+</body>
+</html>
