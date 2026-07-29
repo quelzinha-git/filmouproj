@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de filmes</title>
+    <link rel="stylesheet" href="../static/css/lista_filme.css">
+
+</head>
+<body>
+    <h1>Aqui está a lista de filmes</h1>
+    {% for filme in filmes %}
+    <p>{{ filme.nome }}</p>
+    {% endfor %}
+</body>
+</html>

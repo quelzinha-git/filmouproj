@@ -44,7 +44,7 @@ def listar_filmes():
     filmes = FilmeDAO.listar()
 
     return render_template(
-        'lista_filmes.html',
+        'lista_filme.html',
         filmes=filmes
     )
 
