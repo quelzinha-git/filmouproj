@@ -92,7 +92,6 @@ input:focus{
     box-shadow: 0 0 10px rgba(255,255,255,0.15);
 }
 
-
 button{
     width: 100%;
     padding: 14px;
@@ -130,4 +129,57 @@ h3{
     margin-top: 20px;
     color: #00ff88;
     font-size: 16px;
+}
+
+
+#modalCadastro {
+    margin: auto;
+    width: 340px;
+    padding: 25px;
+    border-radius: 18px;
+    background: rgba(20, 20, 20, 0.95);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+}
+
+#modalCadastro[open] {
+    animation: fadeIn 0.3s ease-out forwards;
+}
+
+#modalCadastro::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+}
+
+#modalCadastro h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+#modalCadastro p {
+    font-size: 15px;
+    color: #cccccc;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+#modalCadastro button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }

@@ -18,7 +18,7 @@
     </div>
 
     <div class="botao">
-        <a href="/usuario/pesquisar">Pesquisar</a>
+        <button type="button" onclick="abrirModal()">Pesquisar</button>
     </div>
 
     <div class="botao">
@@ -29,8 +29,20 @@
         <a href="/usuario/sair">Sair</a>
     </div>
 
-
 </div>
+
+<dialog id="meuModal">
+    <h2>Pesquisar Filme</h2>
+
+    <form action="/usuario/pesquisar" method="GET">
+        <input type="text" name="nome_filme" placeholder="Digite o nome do filme">
+        <br><br>
+        <button type="submit">Buscar</button>
+        <button type="button" onclick="fecharModal()">Cancelar</button>
+    </form>
+</dialog>
+
+<script src="../static/js/modal.js"></script>
 
 </body>
 </html>

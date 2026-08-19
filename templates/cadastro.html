@@ -39,9 +39,22 @@
 
     </form>
 
-    <h3>{{msg}}</h3>
+    <dialog id="modalCadastro">
+        <h2>Aviso</h2>
+        <p id="modalMensagem">{{msg}}</p>
+        <button type="button" onclick="fecharModalCadastro()">Fechar</button>
+    </dialog>
 
 </div>
+
+<script src="../static/js/modal.js"></script>
+
+<script>
+    const mensagem = "{{msg}}";
+    if (mensagem && mensagem.trim() !== "") {
+        abrirModalCadastro();
+    }
+</script>
 
 </body>
 </html>
